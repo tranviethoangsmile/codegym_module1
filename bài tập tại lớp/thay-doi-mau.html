@@ -15,7 +15,14 @@
 </head>
 
 <body>
-    <table border="1" id="colorTest"></table>
+    <table border="1" id="colorTest">
+        <tr>
+            <th>
+                RGB(<span id="r"></span>,<span id="g"></span>,<span id="b"></span>)
+            </th>
+        </tr>
+
+    </table>
     <p>Red</p>
     <input type="range" min="0" max="255" id="red" oninput=colorNew()>
     <p>Green</p>
