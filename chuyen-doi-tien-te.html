@@ -50,7 +50,7 @@
             } else if (from == "yen" && to == "usd") {
                 convert = money * 1 / 23;
             } else if (from == "usd" && to == "yen") {
-                convert = money * 1 / 10
+                convert = money * 1 * 100;
             }
             console.log(convert);
             document.getElementById("result").innerHTML = "money after convert: " + convert + " " + to;
