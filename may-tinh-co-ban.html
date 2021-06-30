@@ -19,7 +19,7 @@
 
 <body>
     <form name="form">
-        <input type="number" name="displayScreen">
+        <input type="number" name="displayScreen" id="displayScreen">
     </form>
     <table border="1" id="may-tinh">
 
@@ -54,18 +54,18 @@
     </table>
     <script>
         function insert(num) {
-            document.form.displayScreen.value = document.form.displayScreen.value + num;
+            document.getElementById("displayScreen").value = document.getElementById("displayScreen").value + num;
         }
 
         function aqua() {
-            var number = document.form.displayScreen.value;
+            var number = document.getElementById("displayScreen").value;
             if (number) {
-                document.form.displayScreen.value = eval(number);
+                document.getElementById("displayScreen").value = eval(number);
             }
         }
 
         function acValue() {
-            document.form.displayScreen.value = '';
+            document.getElementById("displayScreen").value = '';
         }
     </script>
 
