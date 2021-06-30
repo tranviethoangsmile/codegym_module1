@@ -16,6 +16,14 @@
         #mouse_event:hover {
             background-color: blue;
         }
+        
+        #funny-img {
+            display: block;
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
     </style>
 
 </head>
@@ -26,6 +34,7 @@
 
     <button onclick="heyLove()">Yes</button>
     <button onmouseover="mouseover()" onmouseout="mouseOut()" id="mouse_event">No</button>
+    <img id="funny-img" src="https://i.ytimg.com/vi/x-63Cr5WYlQ/maxresdefault.jpg" alt="đố anh bắt được em">
     <script>
         function heyLove() {
             document.getElementById("result").innerHTML = "hey...i love you so much chịch chịch !!!";
@@ -36,11 +45,16 @@
             var y = Math.floor(Math.random() * window.innerHeight);
             document.getElementById("mouse_event").style.left = x + 'px';
             document.getElementById("mouse_event").style.top = y + 'px';
+            document.getElementById("funny-img").style.display = "block";
+            document.getElementById("funny-img").style.marginTop = x + 'px';
+            document.getElementById("funny-img").style.marginLeft = y + 'px';
+
 
         }
 
         function mouseOut() {
-            alert("đố anh bắt được em");
+            document.getElementById("funny-img").style.display = "none";
+
         }
     </script>
 
